@@ -4,7 +4,6 @@ import path from 'path'
 import autoprefixer from 'autoprefixer'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { visualizer } from 'rollup-plugin-visualizer'
-import monacoEditorPlugin from 'vite-plugin-monaco-editor'
 
 const basePath = process.env.NODE_ENV !== 'production' || process.env.DISABLE_BASE_PATH === 'true' ? '/' : '/__km_base__/'
 
@@ -32,11 +31,6 @@ export default defineConfig({
           basePath,
         },
       },
-    }),
-    // See: https://github.com/vdesjs/vite-plugin-monaco-editor/issues/21
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ((monacoEditorPlugin as any).default as typeof monacoEditorPlugin)({
-      languageWorkers: ['editorWorkerService'],
     }),
     visualizer({
       filename: path.resolve(__dirname, 'bundle-analyzer/stats-treemap.html'),

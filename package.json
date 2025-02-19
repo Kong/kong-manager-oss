@@ -45,7 +45,7 @@
     "@material-design-icons/font": "^0.14.13",
     "axios": "^1.7.7",
     "dayjs": "^1.11.13",
-    "monaco-editor": "0.52.0",
+    "monaco-editor": "0.52.2",
     "pinia": "^3.0.1",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
@@ -76,7 +76,6 @@
     "typescript": "^5.4.5",
     "vite": "^5.4.12",
     "vite-plugin-html": "^3.2.2",
-    "vite-plugin-monaco-editor": "^1.1.0",
     "vue-tsc": "^2.1.4"
   },
   "browserslist": [

@@ -7,6 +7,9 @@ import { registerGlobalComponents } from './registerGlobalComponents'
 import './styles/index'
 import { createPinia } from 'pinia'
 
+// This only sets up worker initializers. They will be lazy-loaded when needed.
+import '@/monaco-workers'
+
 const i18n = createI18n<typeof english>('en-us', english, { isGlobal: true })
 
 const app = createApp(App)

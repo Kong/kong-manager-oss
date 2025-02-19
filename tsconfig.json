@@ -9,12 +9,13 @@
       "tests/*": ["tests/*"],
       "config": ["src/config.ts"]
     },
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "allowJs": true,
     "noImplicitAny": false,
     "types": [
-      "vite/client"
+      "vite/client",
+      "monaco-editor",
     ]
   },
   "exclude": ["node_modules", "dist", "coverage", "tests"]

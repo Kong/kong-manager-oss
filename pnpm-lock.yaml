@@ -75,8 +75,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       monaco-editor:
-        specifier: 0.52.0
-        version: 0.52.0
+        specifier: 0.52.2
+        version: 0.52.2
       pinia:
         specifier: ^3.0.1
         version: 3.0.1(typescript@5.4.5)(vue@3.5.12(typescript@5.4.5))
@@ -162,9 +162,6 @@ importers:
       vite-plugin-html:
         specifier: ^3.2.2
         version: 3.2.2(vite@5.4.12(@types/node@20.4.2)(sass@1.80.3)(terser@5.18.2))
-      vite-plugin-monaco-editor:
-        specifier: ^1.1.0
-        version: 1.1.0(monaco-editor@0.52.0)
       vue-tsc:
         specifier: ^2.1.4
         version: 2.1.4(typescript@5.4.5)
@@ -2070,9 +2067,6 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  monaco-editor@0.52.0:
-    resolution: {integrity: sha512-OeWhNpABLCeTqubfqLMXGsqf6OmPU6pHM85kF3dhy6kq5hnhuVS1p3VrEW/XhWHc71P2tHyS5JFySD8mgs1crw==}
-
   monaco-editor@0.52.2:
     resolution: {integrity: sha512-GEQWEZmfkOGLdd3XK8ryrfWz3AIP8YymVXiPHEdewrUq7mh0qrKrfHLNCXcbB6sTnMLnOZ3ztSiKcciFUkIJwQ==}
 
@@ -2631,11 +2625,6 @@ packages:
     resolution: {integrity: sha512-vb9C9kcdzcIo/Oc3CLZVS03dL5pDlOFuhGlZYDCJ840BhWl/0nGeZWf3Qy7NlOayscY4Cm/QRgULCQkEZige5Q==}
     peerDependencies:
       vite: '>=2.0.0'
-
-  vite-plugin-monaco-editor@1.1.0:
-    resolution: {integrity: sha512-IvtUqZotrRoVqwT0PBBDIZPNraya3BxN/bfcNfnxZ5rkJiGcNtO5eAOWWSgT7zullIAEqQwxMU83yL9J5k7gww==}
-    peerDependencies:
-      monaco-editor: '>=0.33.0'
 
   vite@5.4.12:
     resolution: {integrity: sha512-KwUaKB27TvWwDJr1GjjWthLMATbGEbeWYZIbGZ5qFIsgPP3vWzLu4cVooqhm5/Z2SPDUMjyPVjTztm5tYKwQxA==}
@@ -4716,8 +4705,6 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  monaco-editor@0.52.0: {}
-
   monaco-editor@0.52.2: {}
 
   ms@2.1.2: {}
@@ -5262,10 +5249,6 @@ snapshots:
       node-html-parser: 5.4.2
       pathe: 0.2.0
       vite: 5.4.12(@types/node@20.4.2)(sass@1.80.3)(terser@5.18.2)
-
-  vite-plugin-monaco-editor@1.1.0(monaco-editor@0.52.0):
-    dependencies:
-      monaco-editor: 0.52.0
 
   vite@5.4.12(@types/node@20.4.2)(sass@1.80.3)(terser@5.18.2):
     dependencies:
