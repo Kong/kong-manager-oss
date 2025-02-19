@@ -16,7 +16,7 @@ runs:
       id: select-image
       shell: bash
       env:
-        DEFAULT_GATEWAY_IMAGE: kong/kong-dev:master-ubuntu
+        DEFAULT_GATEWAY_IMAGE: kong/kong-dev:pr-14287-ubuntu # kong/kong-dev:master-ubuntu
       run: |
         GATEWAY_IMAGE="${{ inputs.current-image }}"
 
